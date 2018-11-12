@@ -1,0 +1,37 @@
+Meeting Of minutes
+----------------------------------------------------
+
+Date: 8/11/2018
+
+----------------------------------------------------
+
+10.15: Meet our supervisor at Robusta
+
+10.20: We describe our Use case diagrams and the workflow of the hospital which we have confirmed with client ealier
+
+!0.30: Discuss about Blockchain would be used in the diagram
+
+10.35: Supervisor gives some instructions for the next step
+
+10.40: We discuss about how to secure the application 
+
+10.50: The end of the meeting
+
+---------------------------------------------------------------------------------------------------------------
+
+Date : 8/11/2018
+
+-----------------------------------------------------
+
+Team's meeting:
+
+2.30 : meet at the coffee shop
+
+2.35: Review what has been discussed with supervisor in the morning
+
+2.50: Analyse the Use case diagram for further establishing activity diagrams and sequence diagrams
+
+3.20: Tasks delivered 
+
+
+ 
