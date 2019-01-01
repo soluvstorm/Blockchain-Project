@@ -1,0 +1,26 @@
+1/1/2019
+11:46PM
+
+Source: SABSA Chapter 10, page 220
+
+How multi-layering security is possibly put in the requirements and available assets of the application.
+
+System, application software security -------> Crypto security ---------> Information
+
+Both system and application software security could be implemented with the exception of following methodologies :
+
++ Identify then analyse different data workflows.
++ Digital certification (mainly digital signature, learning badges is recommended in our project)
++ Policy for securing and defining essential datas to be highly protected.
++ Authentication.
++ Cryptography.
+
+To protect the information assets, there are various crypto security methods available for stakeholders. Some methods are quite common and basic.
+Stakeholders must be aware of potential vulnerablities that could cause losses from these methods.
+
++ Two factors authentication should be applied when a supervisor verified the QR code whose trainee he was providing supervision.
++ Own a private key. Corroborated by related stakeholders (those got involved in signing and confirming learning plan, trainee profile)
++ Blockchain, for storing hashed data.
++ Decentralization between related stakeholders.
+
+
