@@ -1,0 +1,53 @@
+CHAPTER 6 : 
+Return on Investment
+You invest in security, the security is good, the payback (return) is – nothing happens.
+Security is not for selling since it isn’t like insurance.
+Goal is to achieve the measurement of that return – how safe is that security investment.
+Why need metrics 
+To know how the process is working on (team progress, what have achieved, where they are now)
+SABSA metrics is presented as a solution
+Security management dashboard
+Control loop model Chapter 5. Dashboard.
+Dashboard is used for security management, measuring and reporting back the level of effectiveness. This will help to improve a far more better effectiveness. (figure 6-1 for dashboard)
++ Strategic planning and management. Setting an ultimate goal and a plan to get this goal.
++ Tactical planning and management. Setting an average goal, also plan to get the goal. Achieved these to get further on strategic goal.
++ Operational planning and management. Doing average tasks to keep up the work.
+Balanced Scorecard Approach
+Traditional financial measurement only works for reporting results but improving the plans lead to good results.
+Balanced Scorecard combined both financial and operational measures of performance into a single framework.
+Balanced scorecard translates mission and strategy into a perfect measures that would support the framework for a well planned measurement and management system.
+Balanced Scorecard is useful in providing methods as : 
+-	Clarify organization’s vision.
+-	Provide a framework to align the organization. 
+-	A structure for multiple initiatives.
+-	Strategic management process integrated across the organization.
+To create a Strategy-Focused Organization, Balanced Scorecard is the first step.
+5 principles: 
+-	Translate strategy into operational terms and tasks.
+-	Set the team to strategy.
+-	Encouraging by planning on their every task.
+-	Always renew the strategy even better.
+-	Resources used in order to make the changes effectively.
+Business Drivers and Traceability 
+If a security is hard to breach and measure, the risk is less imminent.
+Best way to measure risk is to define the things that business needs in terms of security. (driver)
+Multi-layered architecture model Chapter 3 is a bi-directional traceability since it began with context (things needed in term of security) then worked through a series of abstractions to develop the component and operational security.
+Business Attributes and Metrics
+Seven different attributes will be measured with metric types and suggested with measurement approach.
+Setting Up A Metric Framework 
+Define the measurement approach and Must be creative in applying the technique. 
+Metrics will provide the significant reasons to track the ongoing process of  security management programme. 
+Some metrics frameworks table 6-5.
+They will be included with Business Attribute, Business Driver, Metric Type, Measurement Approach and Performance Target.
+Maturity Models Applied to Security Architecture 
+Including a table consists of Maturity Stage, Description of each stage
+Stage includes : Initial, Repeatable, Defined, Managed, Optimising.
+System Security Engineering Capability Maturity Model 
+Project and Organisational, Security Engineering are assessed with Process Area.
+Summarise.
+Return of value is used to evaluate the business case for a particular investment, mainly in security.
+Some measurement techniques are required.
+Balanced Scorecard is recommended. It helps getting a direct view to different perspective of the enterprise: Financial, Customer, Internal Process, Innovation and Learning.
+A scorecard is made from each of these perspectives, aligning goals of that enterprise and the measurements how those goals are required to meet.
+Seven headings in the taxonomy are recommended.
+

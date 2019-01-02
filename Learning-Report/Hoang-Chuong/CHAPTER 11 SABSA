@@ -1,0 +1,38 @@
+LOGICAL SECURITY ARCHITECTURE
+2 January 2019
+9:24PM
+
+Logical representations of business requirement is shown by the security policy, has different needs to be secured.
+Content of the security policy
++ what type of security.
++ the level of security needed to be put in the work.
++ level of granularity.
++ how it would be applied to different domains.
+
+Logical security policyarchitecture framework, held many different security policies.
+These policies are integrated through many security services, which are independently specified logical services.
+Their functions are gathered in one group to describe the multi-layered security in chapter 10.
+Those security services would be used for : 
++prevention
++containment 
++detection
++notification
++event collection
++event tracking
++recovery restoration
++assurance
+
+Overall, those mentioned logical security services would be integrated into a logical security architecture. They are sort of:
++Authentication services
++directory services
++certificate management services
++access control services
++intrusion management services
+
+Directory service is used as repository to store all related entities and securities of logical security architecture.
+Its schema describes the relationship between entities and their related-interaction, any attributes that contributing in the logical
+security architecture.
+
+To set out an overall logical security architecture, the security domains should map two notable business domains (physical and logical)
+
+
