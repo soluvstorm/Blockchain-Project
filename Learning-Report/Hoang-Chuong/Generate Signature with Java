@@ -1,0 +1,56 @@
+1/13/2019
+5:40 PM
+
+GenerateSignature
+
+package com.ack.security;
+
+import java.io.FileInputStream;
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+import java.security.PrivateKey;
+import java.security.PublicKey;
+import java.security.SecureRandom;
+
+import com.ack.security.ByteUtils;
+
+/* Generate a DSA signature */
+
+class GenerateSignature {
+
+  public static void main( String[] args ) throws Exception {
+
+    // get hold of a DSA key generator implemented by SUN
+    System.out.println( "get key pair generator..." );
+    java.security.KeyPairGenerator keyGen = java.security.KeyPairGenerator.getInstance( "DSA", "SUN" );
+
+    // randomize based upon SHA for SUN
+    java.security.SecureRandom random = java.security.SecureRandom.getInstance( "SHA1PRNG", "SUN" );
+    keyGen.initialize( 1024, random );
+
+    // create a key pair
+    java.security.KeyPair pair = keyGen.generateKeyPair();
+    java.security.PrivateKey priv = pair.getPrivate();
+    java.security.PublicKey pub = pair.getPublic();
+
+    System.out.println( "## generated key pair..." );
+
+    // create a signature based upon SHA with DSA implemented by SUN
+    java.io.FileInputStream fis = new java.io.FileInputStream( "hello.txt" );
+    byte[] realSig = SignatureUtil.signData( fis, priv );
+    
+    The point of this code is to learn to create a signature through Java inputs. Source was refered from java.happycodings.
+
+    System.out.println( "## signed information..." );
+
+    // output the signed file
+    com.ack.security.ByteUtils.saveBytesToFile( "hello.sig", realSig );
+    System.out.println( "## save signed file to hello.sig ..." );
+
+    // save the public key to file as well
+    com.ack.security.ByteUtils.saveBytesToFile( "hello.pubkey", pub.getEncoded() );
+    System.out.println( "## save public key to hello.pubkey" );
+
+    System.out.println( "done!" );
+  }
+}
