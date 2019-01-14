@@ -1,0 +1,33 @@
+CHAPTER 10
+
+The conceptual security architecture is about our enterprise security architecture, big scene, helicopter view, 
+strategic plan is added to describe the enterprise .
+Related components of mentioned business could be considered to be an asset that needed to be protected from the potential 
+risks is formed into a standard, the SABSA Business Attributes Profile.
+
+Those assets are used to make into a risk management method that presents a prioritized view of the enterprise risks. 
+The risk assessment is used to develop a series of control objectuves that conceptualized the needs of that enterprise.
+Layering techniques are used for developing enterprise security architecture. Based on the strategy of multi-layered security 
+services, the effectiveness of enterprise is proved to be secured.
+Infrastructure architecture is set to be a series of layers.
+Layers are integrated with security components to form a suitable combination of services.
+Some major strategies for the enterprise are mentioned such as authentication, authorization and audit. 
+Those strategies are built around role-based access control, secure service management, system assurance, 
+directory services strategy and public key infrastructure strategy.
+Related components such as people or organization are classified as security entities in conceptual security architecture. 
+Their tasks are classified as entity relationships.
+Many level of trust to describe the relationship of mentioned entities, depending on which the parties know one another.
+Trust can be one or two-way, from two entities. A third entity can interrupt, sometimes.
+Trust brokers are applied by third parties, which essential to some business model.
+Trust relationships could be broken down to components parts, to be one-way trust relationships. 
+This method will form all trust relationships to be detailed.
+
+Security domain, used to build domain models of real business, this will help to understand the co-exist of different 
+security policies, managed by different policy authorities and how they works.
+
+It also helps to understand how networks applications could be implicated and their different security policies to get the 
+suitable level of security for the enterprise.
+The meaning approaches of concept are driven in to provide security in business environments that make use of the Internet, 
+protected by the virtual private networks and firewalls. All are developed by domain models.
+Lifetimes and deadlines are classified in time dependency, all related security.
+State of enterprise security architecture supports the baseline against the planned and performed ‘quick win’ projects.

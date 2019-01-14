@@ -1,0 +1,35 @@
+12/30/2018 
+2:33PM
+This note is about listing, suggesting any possible or more, available solutution to add-in the project and stating project's current assets that needs to be secured.
+
+Pre condition is when condition 1 must be completed in order to execute condition 2.
+Conceptual security architecture 
++ add value.
+Name (Trainee), 
+ID (for QR scanning), 
+Category (type of treatment), 
+Activity (belong to that treatment), 
+Sub-activity (chosen for that activity), 
+Complexity, 
+Level of supervision.
+
++ ‘Return of investment’, investment means spending resources, return means the result of that investment => invest in security, and its result is perfect.
++ need to find a way for the measurement after demonstrating its return of investment.
+
++ Assets (What)
+Hospital training application.
++ Motivation (Why)
+Create a security protocol or solution, mainly on securing data flow of hospital application.
+Record and note what the team has self-studied during the process.
++ Process (How)
+Use any available materials and tools. Develop a security solution for listed assets needed to be protected.
+Cryptography, learning badges is highly recommended. 
++ People (Who)
+Roles that performed and executed important tasks to preserve the cycle of data flow.
+Trainee, Supervisor, Mentor, Program Director, N/A
++ Location (Where)
+Sequence diagram, activity diagram, business process diagram
++ Time (When)
+Project deadlines
+
+
