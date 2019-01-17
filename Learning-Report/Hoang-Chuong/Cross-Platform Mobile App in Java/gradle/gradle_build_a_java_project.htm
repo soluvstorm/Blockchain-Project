@@ -1,0 +1,87 @@
+apply plugin: 'java'
+
+src/main/java contains the Java source code
+src/test/java contains the Java tests
+
+C:\> gradle build
+
+apply plugin: 'java'
+sourceSets {
+   main {
+      java {
+         srcDir 'src'
+      }
+   }
+	
+   test {
+      java {
+         srcDir 'test'
+      }
+   }
+}
+
+apply plugin: 'java'
+
+repositories {
+   jcenter()
+}
+
+dependencies {
+   compile 'org.slf4j:slf4j-api:1.7.12'
+   testCompile 'junit:junit:4.12'
+}
+
+apply plugin: 'java'
+
+jar {
+   manifest {
+      attributes 'Main-Class': 'com.example.main.Application'
+   }
+}
+
+package com.bank;
+
+/**
+* Hello world!
+*
+*/
+
+public class App {
+   public static void main( String[] args ){
+      System.out.println( "Hello World!" );
+   }
+}
+
+package com.bank;
+
+/**
+* Hello world!
+*
+*/
+
+public class App{
+   public static void main( String[] args ){
+      System.out.println( "Hello World!" );
+   }
+}
+
+apply plugin: 'java'
+
+repositories {
+   jcenter()
+}
+
+dependencies {
+   compile 'org.slf4j:slf4j-api:1.7.12'
+   testCompile 'junit:junit:4.12'
+}
+
+jar {
+   manifest {
+      attributes 'Main-Class': 'com.example.main.Application'
+   }
+}
+
+consumerbanking\> gradle tasks
+consumerbanking\> gradle assemble
+consumerbanking\> gradle build
