@@ -1,0 +1,35 @@
+package javaapplication1;
+
+import java.io.FileInputStream;
+import java.security.KeyFactory;
+import java.security.PrivateKey;
+import java.security.spec.PKCS8EncodedKeySpec;
+import java.util.Base64;
+
+import javax.crypto.Cipher;
+
+public class JavaApplication1 {
+
+	public static void main(String[] args) {
+		try {
+			// read file containing private key
+			FileInputStream fis = new FileInputStream("D:/privateKey.rsa");
+			byte[] b = new byte[fis.available()];
+			fis.read(b);
+			fis.close();
+// create private key
+			PKCS8EncodedKeySpec spec = new PKCS8EncodedKeySpec(b);
+			KeyFactory factory = KeyFactory.getInstance("RSA");
+			PrivateKey priKey = factory.generatePrivate(spec);
+
+			// decrypt
+			Cipher c = Cipher.getInstance("RSA");
+			c.init(Cipher.DECRYPT_MODE, priKey);
+			byte decryptOut[] = c.doFinal(Base64.getDecoder().decode(
+					"RR8WsVCiTUkm67vY8dSfv+eJ1h2JLEulXQZf4t7rxP8HynxMKrYcAmGvIYsrUb77ys4K8uUj48ayT3bSsM3wfnoJLtgww2idNB7r8UeIyIGe/UKoO0co5aJoptt8NwuKNCS0uf7fEEZnAfB1rszXqKQj0IxOdCtYLorO7DltwDM="));
+			System.out.println("Data decrypted: " + new String(decryptOut));
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+}
