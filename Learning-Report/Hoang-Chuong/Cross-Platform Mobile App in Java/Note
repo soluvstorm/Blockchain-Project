@@ -1,0 +1,41 @@
+Cross Platform Mobile App in Java
+Tool : JavaFX
+Need to prepare :
++ gradle : for automating many tasks involved in building apps.
+Configure gradle : gradle -v
+JDK 8 should be listed in section labeled JVM
++ JAVA_HOME : set the variable in /home/<user>/.bashrc or /etc/profile
+-Command line to get JAVA_HOME properly on set :
+JAVA_HOME=/home/adriandavid/java/oracle_jdk1.8.0_181/
+export JAVA_HOME
+-To get the shell reflects the above change : 
+source ~/.bashrc
+source /etc/profile
+-Verify the variable : 
+echo $JAVA_HOME
+-Configure gradle.properties :
+robovm.device.name=iPhone-7
+robovm.sdk.version=11.0
+org.gradle.jvmargs=-Xms4g -Xmx8g
+-Set ANDROID_HOME :
+ANDROID_HOME=/home/adriandavid/Android/ 
+export ANDROID_HOME
+-Grab the tools necessary to build the Android build : 
+# *.nix
+./sdkmanager "platform-tools" "build-tools;25.0.3" "platforms;android-25" "extras;android;m2repository" "extras;google;m2repository"
+or
+#Windows
+sdkmanager "platform-tools" "build-tools;25.0.3" "platforms;android-25" "extras;android;m2repository" "extras;google;m2repository"
+-Execute the following script to automate the process of creating application directories : 
+<<View file Korn shell>>
+<<View file Window Shell>>
+Save the file as mkpdir.bat or mkpdir.sh and execute the file from the project’s root directory as root : 
+# *.nix
+chmod +x mkdir.sh
+-sh ./mkpdir.sh
+# Windows
+Mkpdir
+
+-To build and run application, execute the gradle wrapper in the root directory : 
+./gradlew clean build
+
