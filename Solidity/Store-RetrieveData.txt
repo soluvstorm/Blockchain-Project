@@ -1,0 +1,55 @@
+/* Store data in an address and call function to retrieve data from that address */
+
+pragma solidity ^0.5.1;
+
+
+contract test_call{
+    
+    
+struct Trainee {
+       
+        
+uint 
+string name;
+
+}
+    
+    
+    
+mapping (address => Trainee) info;
+    
+address[] a;
+    
+    
+    
+function setinfo(address _add, uint _id, string memory _name) public {
+        
+Trainee storage i = info[_add];
+        
+i.id = _id;
+        
+i.name = _name;
+        
+        
+a.push(_add) +1;
+        
+    
+}
+    
+    
+function getListOfAddress() public view returns(address[] memory){
+        
+return a;
+    
+}
+    
+    
+function getTraineeInfo(address _add) view public returns (uint, string memory){
+        
+return (info[_add].id, info[_add].name);
+    
+} 
+
+    
+
+}

@@ -1,0 +1,43 @@
+pragma solidity ^0.5.1;
+
+contract Test_Crypto {
+    address public Hospital_Address;
+    
+    struct Trainee {
+        address TraineeAddress;
+        uint TraineeID;
+        string TraineeName;
+        string HospitalName;
+        string EncryptedTraineeCertificate;
+        string EncryptedTraineeLevel;
+    }
+    Trainee t;
+    mapping (address => Trainee) public trainee;
+    
+    constructor () public{
+        Hospital_Address = msg.sender;
+    }
+    
+    function setTraineeInfo(address _TraineeAddress, uint _TraineeID, string memory _TraineeName, string memory _HospitalName, string memory _EncryptedTraineeCertificate, string memory _EncryptedTraineeLevel) public {
+        require(msg.sender == Hospital_Address);
+        t.TraineeAddress = _TraineeAddress;
+        t.TraineeID = _TraineeID;
+        t.TraineeName = _TraineeName;
+        t.HospitalName = _HospitalName;
+        t.EncryptedTraineeCertificate = _EncryptedTraineeCertificate;
+        t.EncryptedTraineeLevel = _EncryptedTraineeLevel;
+    }
+    
+    function getTraineeInfo() public view returns (address, uint, string memory, string memory, string memory, string memory){
+        return (t.TraineeAddress, t.TraineeID, t.TraineeName, t.HospitalName, t.EncryptedTraineeCertificate, t.EncryptedTraineeLevel);
+    }
+    
+    function getInfo(address _TraineeAddress) public view returns (address, uint, string memory, string memory, string memory, string memory){
+        if (t.TraineeAddress == _TraineeAddress)
+        {
+            return (t.TraineeAddress, t.TraineeID, t.TraineeName, t.HospitalName, t.EncryptedTraineeCertificate, t.EncryptedTraineeLevel);
+        }
+        
+    }
+    
+}
