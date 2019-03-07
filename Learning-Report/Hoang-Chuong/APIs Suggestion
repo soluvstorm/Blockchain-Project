@@ -1,0 +1,20 @@
++ Creating assessment API:
+- encrypt record.
+- decrypt record.
+Record will contain with ID, name, category and level of supervision.
+- signing and verifying trainee record.
+
++ Trainees join game API:
+- encrypt profile.
+- decrypt profile.
+Profile includes ID and name.
+
++ Profile sharing API:
+- decrypt profile.
+- encrypt session key.
+- decrypt session key.
+
++ Selecting task API:
+- encrypt task + answer.
+- decrypt task + answer.
+- decrypt session key.
